@@ -44,3 +44,21 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 ```
 kubectl get pods -n argocd
 ```
+## 4. Access the ArgoCD dashboard
+- Port forward the ArgoCD service:
+```
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
+- Access the dashboard using the public ip
+  ○ Username should be admin.
+  ○ Password would be obtained using:
+```
+kubectl config set-context --current --namespace=argocd
+```
+```
+argocd login –-core
+```
+```
+argocd admin initial-password -n argocd
+```
+

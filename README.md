@@ -61,4 +61,39 @@ argocd login –-core
 ```
 argocd admin initial-password -n argocd
 ```
+## 5. Deploy the application
+1. Clone the repository
+ ```
+git clone https://github.com/your-repo/project.git
+cd project
+```
+2. Add and commit the files for your application
+```
+git add .
+git commit -m "Initial commit"
+git push
+```
+3. In the ArgoCD dashboard, configure a new application:
+○ Name: Your application name
+○ Source: Your Git repository URL and file path
+○ Destination: Kubernetes cluster and namespace (default by default)
+○ Policy: Automatic synchronization
 
+## 6. Installing istio
+- Installing demofile:
+```
+istioctl install --set profile=demo
+```
+- istioctl install --set profile=demo:
+```
+kubectl label namespace default istio-injection=enabled
+```
+- Deleting and restarting the pods:
+```
+kubectl delete pods --all -n default
+```
+- Deploy istio addons:
+  ○ Do locate to the samples folder inside the istio file
+```
+kubectl apply -f addons/
+```

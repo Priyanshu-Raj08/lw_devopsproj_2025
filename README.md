@@ -6,12 +6,12 @@
 
 Ensure the following tools are installed and configured on your system:
 
-### AWS Account: Ensure your account is active.
-Git Bash: [Download Git Bash](https://git-scm.com/downloads)
-AWS CLI: [Download AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-kubectl: [Download kubectl](https://kubernetes.io/docs/tasks/tools/)
-eksctl: [Download eksctl](https://eksctl.io/installation/)
-Istio CLI: [Download Istio CLI](https://eksctl.io/installation/)
-ArgoCD: [Install ArgoCD (Releases)](https://eksctl.io/installation/)
+### AWS Account: Ensure your account is active.  
+Git Bash: [Download Git Bash](https://git-scm.com/downloads).  
+AWS CLI: [Download AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).  
+kubectl: [Download kubectl](https://kubernetes.io/docs/tasks/tools/).  
+eksctl: [Download eksctl](https://eksctl.io/installation/).  
+Istio CLI: [Download Istio CLI](https://eksctl.io/installation/).  
+ArgoCD: [Install ArgoCD (Releases)](https://eksctl.io/installation/).  
 
 **Important: Set up the path as environment variables for AWS cli, kubectl, eksctl, Istioctl

@@ -29,5 +29,5 @@ aws configure
 ```
 eksctl create cluster --name devopsprojectcluster
 ```
-```note
+``note
 Important: Please review the README file before committing your changes.

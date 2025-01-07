@@ -116,3 +116,9 @@ istioctl dashboard grafana
 ```
 ## 9. Security analysis
 - Use Trivy or SonarQube for scanning vulnerabilities in your Kubernetes setup and application.
+
+## Conclusion
+### This project helps you practice cloud-native application deployment and management using industry-standard tools. With ArgoCD, you can maintain GitOps workflows, and Istio enhances observability, traffic control, and security of your services. This hands-on guide empowers you to build and manage scalable, resilient systems effectively.
+
+## App resource
+- https://github.com/vimallinuxworld13/eks_istio_bookinfo_app/tree/master

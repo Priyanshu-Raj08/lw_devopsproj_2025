@@ -50,8 +50,8 @@ kubectl get pods -n argocd
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 - Access the dashboard using the public ip
-  ○ Username should be admin.  
-  ○ Password would be obtained using:  
+  . Username should be admin.  
+  . Password would be obtained using:  
 ```
 kubectl config set-context --current --namespace=argocd
 ```

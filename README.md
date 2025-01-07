@@ -15,3 +15,9 @@ Istio CLI: [Download Istio CLI](https://eksctl.io/installation/).
 ArgoCD: [Install ArgoCD (Releases)](https://eksctl.io/installation/).  
 
 **Important: Set up the path as environment variables for AWS cli, kubectl, eksctl, Istioctl
+
+## Deployment
+
+## 1. Configure Aws cli
+```
+aws configure

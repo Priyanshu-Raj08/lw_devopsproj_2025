@@ -19,5 +19,15 @@ ArgoCD: [Install ArgoCD (Releases)](https://eksctl.io/installation/).
 ## Deployment
 
 ## 1. Configure Aws cli
+### Enter your aws credentials like private access key and security key.
 ```
 aws configure
+```
+## 2. Creating kubernetes cluster
+### Execute the command below to start a cluster
+
+```
+eksctl create cluster --name devopsprojectcluster
+```
+```note
+Important: Please review the README file before committing your changes.

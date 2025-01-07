@@ -97,3 +97,22 @@ kubectl delete pods --all -n default
 ```
 kubectl apply -f addons/
 ```
+- Generate traffic for testing:
+```
+while :; do curl -s -o /dev/null -w "%{http_code}" http://<your-service-url>/productpage; done
+```
+
+## 8. Monitoring and managing the traffics
+
+- Using istioctl open the dashboards
+```
+istioctl dashboard kiali
+```
+```
+istioctl dashboard prometheus
+```
+```
+istioctl dashboard grafana
+```
+## 9. Security analysis
+- Use Trivy or SonarQube for scanning vulnerabilities in your Kubernetes setup and application.

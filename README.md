@@ -29,5 +29,18 @@ aws configure
 ```
 eksctl create cluster --name devopsprojectcluster
 ```
-`note
-Important: Please review the README file before committing your changes.
+**Note: Creating cluster will result in bill addonsRefer to [AWS pricing details](https://aws.amazon.com/pricing/)**
+
+## 3. Installing Argocd
+-Creating namespace for ArgoCd
+```
+kubectl create namespace argocd
+```
+-Apply ArgoCD installation
+```
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+-Verifying the pods
+```
+kubectl get pods -n argocd
+```
